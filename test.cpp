@@ -31,6 +31,7 @@ int main(int argc, char* argv[]) {
 	return 0;
 }
 
+// these function will callbacked by CPU (CPU::run_frame function)
 namespace HAL {
 	u8 get_joypad_state(int n) {
 		printf("get_joypad_state: %d\n", n);
