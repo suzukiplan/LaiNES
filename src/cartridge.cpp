@@ -35,28 +35,19 @@ void signal_scanline()
     mapper->signal_scanline();
 }
 
-/* Load the ROM from a file. */
-void load(const char* fileName)
+/* Load the ROM from the memory. */
+void load(void* rom, int size)
 {
-    FILE* f = fopen(fileName, "rb");
-
-    fseek(f, 0, SEEK_END);
-    int size = ftell(f);
-    fseek(f, 0, SEEK_SET);
-
-    u8* rom = new u8[size];
-    fread(rom, size, 1, f);
-    fclose(f);
-
-    int mapperNum = (rom[7] & 0xF0) | (rom[6] >> 4);
+    u8* _rom = (u8*)rom;
+    int mapperNum = (_rom[7] & 0xF0) | (_rom[6] >> 4);
     if (loaded()) delete mapper;
     switch (mapperNum)
     {
-        case 0:  mapper = new Mapper0(rom); break;
-        case 1:  mapper = new Mapper1(rom); break;
-        case 2:  mapper = new Mapper2(rom); break;
-        case 3:  mapper = new Mapper3(rom); break;
-        case 4:  mapper = new Mapper4(rom); break;
+        case 0:  mapper = new Mapper0(_rom); break;
+        case 1:  mapper = new Mapper1(_rom); break;
+        case 2:  mapper = new Mapper2(_rom); break;
+        case 3:  mapper = new Mapper3(_rom); break;
+        case 4:  mapper = new Mapper4(_rom); break;
     }
 
     CPU::power();

@@ -16,7 +16,19 @@ int main(int argc, char* argv[]) {
 
 	// load rom file
 	puts("loading");
-	Cartridge::load(argv[1]);
+	FILE* f = fopen(argv[1], "rb");
+	if (!f) {
+		puts("file not found");
+		return 2;
+	}
+	fseek(f, 0, SEEK_END);
+	int size = ftell(f);
+	fseek(f, 0, SEEK_SET);
+	u8* rom = new u8[size];
+	fread(rom, size, 1, f);
+	fclose(f);
+
+	Cartridge::load(rom, size);
 	if (!Cartridge::loaded()) {
 		puts("load error");
 		return 2;
