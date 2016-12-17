@@ -1,4 +1,4 @@
-# [WIP] LaiNES - suzukiplan edition 
+# LaiNES - suzukiplan edition 
 - これは, [LaiNES](https://github.com/AndreaOrru/LaiNES) を SUZUKI PLAN で カスタム しているモノです
 - [LaiNES](https://github.com/AndreaOrru/LaiNES)からプラットフォーム依存レイヤを分離するカスタマイズをしています
 - about [LaiNES](https://github.com/AndreaOrru/LaiNES): [README-original.md](README-original.md)
