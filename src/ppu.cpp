@@ -1,6 +1,6 @@
 #include "cartridge.hpp"
 #include "cpu.hpp"
-#include "gui.hpp"
+#include "hal.hpp"
 #include "ppu.hpp"
 
 namespace PPU {
@@ -269,7 +269,7 @@ template<Scanline s> void scanline_cycle()
     static u16 addr;
 
     if (s == NMI and dot == 1) { status.vBlank = true; if (ctrl.nmi) CPU::set_nmi(); }
-    else if (s == POST and dot == 0) GUI::new_frame(pixels);
+    else if (s == POST and dot == 0) HAL::new_frame(pixels);
     else if (s == VISIBLE or s == PRE)
     {
         // Sprites:
