@@ -27,6 +27,7 @@ HEADERS = src/include/apu.hpp\
 FLAGS = -std=c++14 -Isrc/include -Ilib/include -c
 
 all: build $(OBJS)
+	g++ test.cpp $(OBJS)
 
 build:
 	mkdir build
