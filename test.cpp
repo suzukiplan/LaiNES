@@ -37,7 +37,7 @@ namespace HAL {
 		printf("get_joypad_state: %d\n", n);
 		return 0; // return joypad state
 	}
-	void new_frame(u32* pixels) {
+	void new_frame(u16* pixels) {
 		// set pixels to graphic-module
 		printf("new_frame: %p\n", pixels);
 	}
