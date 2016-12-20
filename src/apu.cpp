@@ -8,7 +8,7 @@ namespace APU {
 Nes_Apu apu;
 Blip_Buffer buf;
 
-const int OUT_SIZE = 4096;
+const int OUT_SIZE = 9600;
 blip_sample_t outBuf[OUT_SIZE];
 
 void init()
