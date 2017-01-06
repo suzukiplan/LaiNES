@@ -1,5 +1,5 @@
 #include "ppu.hpp"
-#include "mappers/mapper3.hpp"
+#include "mapper3.hpp"
 
 /* Based off of https://wiki.nesdev.com/w/index.php/INES_Mapper_003 */
 

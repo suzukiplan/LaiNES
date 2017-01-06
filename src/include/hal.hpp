@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include <Nes_Apu.h>
+#include "Nes_Apu.h"
 #include "common.hpp"
 
 namespace HAL {

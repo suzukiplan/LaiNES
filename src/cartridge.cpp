@@ -1,11 +1,11 @@
 #include <cstdio>
 #include "apu.hpp"
 #include "cpu.hpp"
-#include "mappers/mapper0.hpp"
-#include "mappers/mapper1.hpp"
-#include "mappers/mapper2.hpp"
-#include "mappers/mapper3.hpp"
-#include "mappers/mapper4.hpp"
+#include "mapper0.hpp"
+#include "mapper1.hpp"
+#include "mapper2.hpp"
+#include "mapper3.hpp"
+#include "mapper4.hpp"
 #include "ppu.hpp"
 #include "cartridge.hpp"
 

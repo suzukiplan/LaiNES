@@ -1,5 +1,5 @@
 #include "ppu.hpp"
-#include "mappers/mapper1.hpp"
+#include "mapper1.hpp"
 
 
 /* Apply the registers state */

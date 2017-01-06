@@ -1,6 +1,6 @@
 #pragma once
 #include "common.hpp"
-#include <Nes_Apu.h>
+#include "Nes_Apu.h"
 
 namespace CPU {
 

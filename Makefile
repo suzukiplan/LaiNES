@@ -29,7 +29,7 @@ HEADERS = src/include/apu.hpp\
 	lib/include/Nes_Oscs.h\
 	lib/include/Blip_Buffer.h
 
-FLAGS = -std=c++14 -Isrc/include -Ilib/include
+FLAGS = -std=c++14 -Isrc/include -Isrc/include/mappers -Ilib/include
 
 all: build $(OBJS)
 	g++ $(FLAGS) test.cpp $(OBJS)
