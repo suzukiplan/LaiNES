@@ -1,6 +1,9 @@
 #pragma once
+#ifdef __APPLE__
+#include <stdint.h>
+#else
 #include <cstdint>
-
+#endif
 
 #define NTH_BIT(x, n) (((x) >> (n)) & 1)
 
