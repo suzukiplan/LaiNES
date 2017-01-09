@@ -2,7 +2,7 @@
 - これは, [LaiNES](https://github.com/AndreaOrru/LaiNES) を SUZUKI PLAN で カスタム しているモノです
 - [LaiNES](https://github.com/AndreaOrru/LaiNES)からプラットフォーム依存レイヤを分離するカスタマイズをしています
 - about [LaiNES](https://github.com/AndreaOrru/LaiNES): [README-original.md](README-original.md)
-- プラットフォーム依存レイヤの実装例: [Android](https://github.com/suzukiplan/nes-view-android)
+- プラットフォーム依存レイヤの実装例: [Android](https://github.com/suzukiplan/nes-view-android), [iOS](https://github.com/suzukiplan/LaiNES-iOS)
 
 ## 本家との違い
 - これ単体では動きません
